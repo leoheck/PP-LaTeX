@@ -170,21 +170,21 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 \newdimen\PP@boxsep
 \PP@boxsep0pt
 \long\def\PP@boxit#1{%
-    \vbox{%
-        \hrule
-        \hbox{%
-            \vrule
-            \kern\PP@boxsep
-            \vbox{%
-                \kern\PP@boxsep
-                #1\relax
-                \kern\PP@boxsep
-            }%
-            \kern
-            \PP@boxsep
-            \vrule
-       }%
-       \hrule
+	\vbox{%
+		\hrule
+		\hbox{%
+			\vrule
+			\kern\PP@boxsep
+			\vbox{%
+				\kern\PP@boxsep
+				#1\relax
+				\kern\PP@boxsep
+			}%
+			\kern
+			\PP@boxsep
+			\vrule
+	   }%
+	   \hrule
    }%
 }
 %----------------------------------------------------------------------------------
@@ -214,121 +214,121 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 
 % Definições dependentes de idioma.
 %\addto\captionsbrazil{%
-    \newcommand*{\PP@Uni}{Pontif\'{i}cia Universidade Cat\'{o}lica do Rio Grande do Sul}
-    \newcommand*{\PP@Fac}{Faculdade de Inform\'{a}tica}
-    \newcommand*{\PP@Dep}{Programa de P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o}
-    %\edef\PP@undef{n\~{a}o definido}
-    \newcommand*{\tese}{Tese}
-    \newcommand*{\pep}{Plano de estudo e pesquisa}
-    \newcommand*{\ptese}{Proposta de tese}
-    \newcommand*{\dissertacao}{Disserta\c{c}\~{a}o}
-    \newcommand*{\doutor}{Doutor}
-    \newcommand*{\mestre}{Mestre}
-    \newcommand*{\bacharel}{Bacharel}
-    \newcommand*{\PP@orientadorname}{Orientador}
-    \newcommand*{\PP@descricao}{%
-        \PP@tipo{} apresentad\ifx\PP@tipo\pep o\else a\fi{} como requisito parcial \`{a}
-        obten\c{c}\~{a}o do grau de \PP@grau{} em Ci\^{e}ncia da
-        Computa\c{c}\~{a}o na \PP@Uni{}.%
-    }
-    \newcommand*{\PP@fichaname}{Substitua esta p\'{a}gina pela Ficha Catalogr\'{a}fica}
-    \newcommand*{\PP@termoname}{Substitua esta p\'{a}gina pelo Termo de Apresenta\c{c}\~{a}o}
-    \newcommand*{\PP@dedicatorianame}{Dedicat\'{o}ria}
-    \newcommand*{\PP@agradecimentosname}{Agradecimentos}
-    \newcommand*{\PP@bibname}{Refer\^{e}ncias}
-    \newcommand*{\PP@anexoname}{Anexo}
-    % TODO Para usar os estilos bibliográficos de forma independente desta
-    % classe, copie estas definições para o seu documento.
-    \gdef\bbland{e}
-    \gdef\bbletal{et~al.}
-    \gdef\bbleditors{editores}
-    \gdef\bbleditor{editor}
-    \gdef\bbledby{editado por}
-    \gdef\bbledn{ed.}
-    \gdef\bblvol{vol.}
-    \gdef\bblof{de}
-    \gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
-    \gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
-    \gdef\bblin{in}
-    \gdef\bblpp{pp.}
-    \gdef\bblp{pp.}
-    \gdef\bbleidpp{p}
-    \gdef\bblchap{cap.}
-    \gdef\bbltechrep{Relat\'{o}rio T\'{e}cnico}
-    \gdef\bblmthesis{Disserta\c{c}\~{a}o de Mestrado}
-    \gdef\bblphdthesis{Tese de Doutorado}
-    \gdef\bblcaptured{Capturado em: }
-    \gdef\bbljan{Jan}
-    \gdef\bblfeb{Fev}
-    \gdef\bblmar{Mar}
-    \gdef\bblapr{Abr}
-    \gdef\bblmay{Maio}
-    \gdef\bbljun{Jun}
-    \gdef\bbljul{Jul}
-    \gdef\bblaug{Ago}
-    \gdef\bblsep{Set}
-    \gdef\bbloct{Out}
-    \gdef\bblnov{Nov}
-    \gdef\bbldec{Dez}
+	\newcommand*{\PP@Uni}{Pontif\'{i}cia Universidade Cat\'{o}lica do Rio Grande do Sul}
+	\newcommand*{\PP@Fac}{Faculdade de Inform\'{a}tica}
+	\newcommand*{\PP@Dep}{Programa de P\'{o}s-Gradua\c{c}\~{a}o em Ci\^{e}ncia da Computa\c{c}\~{a}o}
+	%\edef\PP@undef{n\~{a}o definido}
+	\newcommand*{\tese}{Tese}
+	\newcommand*{\pep}{Plano de estudo e pesquisa}
+	\newcommand*{\ptese}{Proposta de tese}
+	\newcommand*{\dissertacao}{Disserta\c{c}\~{a}o}
+	\newcommand*{\doutor}{Doutor}
+	\newcommand*{\mestre}{Mestre}
+	\newcommand*{\bacharel}{Bacharel}
+	\newcommand*{\PP@orientadorname}{Orientador}
+	\newcommand*{\PP@descricao}{%
+		\PP@tipo{} apresentad\ifx\PP@tipo\pep o\else a\fi{} como requisito parcial \`{a}
+		obten\c{c}\~{a}o do grau de \PP@grau{} em Ci\^{e}ncia da
+		Computa\c{c}\~{a}o na \PP@Uni{}.%
+	}
+	\newcommand*{\PP@fichaname}{Substitua esta p\'{a}gina pela Ficha Catalogr\'{a}fica}
+	\newcommand*{\PP@termoname}{Substitua esta p\'{a}gina pelo Termo de Apresenta\c{c}\~{a}o}
+	\newcommand*{\PP@dedicatorianame}{Dedicat\'{o}ria}
+	\newcommand*{\PP@agradecimentosname}{Agradecimentos}
+	\newcommand*{\PP@bibname}{Refer\^{e}ncias}
+	\newcommand*{\PP@anexoname}{Anexo}
+	% TODO Para usar os estilos bibliográficos de forma independente desta
+	% classe, copie estas definições para o seu documento.
+	\gdef\bbland{e}
+	\gdef\bbletal{et~al.}
+	\gdef\bbleditors{editores}
+	\gdef\bbleditor{editor}
+	\gdef\bbledby{editado por}
+	\gdef\bbledn{ed.}
+	\gdef\bblvol{vol.}
+	\gdef\bblof{de}
+	\gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
+	\gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
+	\gdef\bblin{in}
+	\gdef\bblpp{pp.}
+	\gdef\bblp{pp.}
+	\gdef\bbleidpp{p}
+	\gdef\bblchap{cap.}
+	\gdef\bbltechrep{Relat\'{o}rio T\'{e}cnico}
+	\gdef\bblmthesis{Disserta\c{c}\~{a}o de Mestrado}
+	\gdef\bblphdthesis{Tese de Doutorado}
+	\gdef\bblcaptured{Capturado em: }
+	\gdef\bbljan{Jan}
+	\gdef\bblfeb{Fev}
+	\gdef\bblmar{Mar}
+	\gdef\bblapr{Abr}
+	\gdef\bblmay{Maio}
+	\gdef\bbljun{Jun}
+	\gdef\bbljul{Jul}
+	\gdef\bblaug{Ago}
+	\gdef\bblsep{Set}
+	\gdef\bbloct{Out}
+	\gdef\bblnov{Nov}
+	\gdef\bbldec{Dez}
 %}
 \addto\captionsenglish{%
-    \renewcommand*{\PP@Uni}{Pontifical Catholic University of Rio Grande do Sul}
-    \renewcommand*{\PP@Fac}{Faculty of Informatics}
-    \renewcommand*{\PP@Dep}{Computer Science Graduate Program}
-    %\edef\PP@undef{not defined}
-    \renewcommand*{\tese}{Dissertation}
-    \renewcommand*{\pep}{Research plan}
-    \renewcommand*{\ptese}{Dissertation proposal}
-    \renewcommand*{\dissertacao}{Thesis}
-    \renewcommand*{\monografia}{Thesis}
-    \renewcommand*{\doutor}{Ph.\ D.\ }
-    \renewcommand*{\mestre}{Master}
-    \renewcommand*{\bacharel}{Bachelor}
-    \renewcommand*{\PP@orientadorname}{Advisor}
-    \renewcommand*{\PP@descricao}{%
-        \PP@tipo{} submitted to the \PP@Uni{} in partial fullfillment of
-        the requirements for the degree of \PP@grau{} in Computer
-        Science.%
-    }
-    \renewcommand*{\PP@fichaname}{Replace this page with the Library Catalog Page}
-    \renewcommand*{\PP@termoname}{Replace this page with the Committee Forms}
-    \renewcommand*{\PP@dedicatorianame}{\null}
-    \renewcommand*{\PP@agradecimentosname}{Acknowledgments}
-    \renewcommand*{\PP@bibname}{References}
-    \renewcommand*{\PP@anexoname}{Attachment}
-    % TODO Para usar os estilos bibliográficos de forma independente desta
-    % classe, copie estas definições para o seu documento.
-    \gdef\bbland{and}
-    \gdef\bbletal{et~al.}
-    \gdef\bbleditors{editors}
-    \gdef\bbleditor{editor}
-    \gdef\bbledby{edited by}
-    \gdef\bbledn{ed.}
-    \gdef\bblvol{vol.}
-    \gdef\bblof{of}
-    \gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
-    \gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
-    \gdef\bblin{in}
-    \gdef\bblpp{pp.}
-    \gdef\bblp{pp.}
-    \gdef\bbleidpp{p}
-    \gdef\bblchap{chap.}
-    \gdef\bbltechrep{Technical Report}
-    \gdef\bblmthesis{Master's Thesis}
-    \gdef\bblphdthesis{Ph.D. Thesis}
-    \gdef\bblcaptured{Source: }
-    \gdef\bbljan{Jan}
-    \gdef\bblfeb{Feb}
-    \gdef\bblmar{Mar}
-    \gdef\bblapr{Apr}
-    \gdef\bblmay{May}
-    \gdef\bbljun{Jun}
-    \gdef\bbljul{Jul}
-    \gdef\bblaug{Aug}
-    \gdef\bblsep{Sep}
-    \gdef\bbloct{Oct}
-    \gdef\bblnov{Nov}
-    \gdef\bbldec{Dec}
+	\renewcommand*{\PP@Uni}{Pontifical Catholic University of Rio Grande do Sul}
+	\renewcommand*{\PP@Fac}{Faculty of Informatics}
+	\renewcommand*{\PP@Dep}{Computer Science Graduate Program}
+	%\edef\PP@undef{not defined}
+	\renewcommand*{\tese}{Dissertation}
+	\renewcommand*{\pep}{Research plan}
+	\renewcommand*{\ptese}{Dissertation proposal}
+	\renewcommand*{\dissertacao}{Thesis}
+	\renewcommand*{\monografia}{Thesis}
+	\renewcommand*{\doutor}{Ph.\ D.\ }
+	\renewcommand*{\mestre}{Master}
+	\renewcommand*{\bacharel}{Bachelor}
+	\renewcommand*{\PP@orientadorname}{Advisor}
+	\renewcommand*{\PP@descricao}{%
+		\PP@tipo{} submitted to the \PP@Uni{} in partial fullfillment of
+		the requirements for the degree of \PP@grau{} in Computer
+		Science.%
+	}
+	\renewcommand*{\PP@fichaname}{Replace this page with the Library Catalog Page}
+	\renewcommand*{\PP@termoname}{Replace this page with the Committee Forms}
+	\renewcommand*{\PP@dedicatorianame}{\null}
+	\renewcommand*{\PP@agradecimentosname}{Acknowledgments}
+	\renewcommand*{\PP@bibname}{References}
+	\renewcommand*{\PP@anexoname}{Attachment}
+	% TODO Para usar os estilos bibliográficos de forma independente desta
+	% classe, copie estas definições para o seu documento.
+	\gdef\bbland{and}
+	\gdef\bbletal{et~al.}
+	\gdef\bbleditors{editors}
+	\gdef\bbleditor{editor}
+	\gdef\bbledby{edited by}
+	\gdef\bbledn{ed.}
+	\gdef\bblvol{vol.}
+	\gdef\bblof{of}
+	\gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
+	\gdef\bblno{n\raise1ex\hbox{\underbar{\scriptsize o}}}
+	\gdef\bblin{in}
+	\gdef\bblpp{pp.}
+	\gdef\bblp{pp.}
+	\gdef\bbleidpp{p}
+	\gdef\bblchap{chap.}
+	\gdef\bbltechrep{Technical Report}
+	\gdef\bblmthesis{Master's Thesis}
+	\gdef\bblphdthesis{Ph.D. Thesis}
+	\gdef\bblcaptured{Source: }
+	\gdef\bbljan{Jan}
+	\gdef\bblfeb{Feb}
+	\gdef\bblmar{Mar}
+	\gdef\bblapr{Apr}
+	\gdef\bblmay{May}
+	\gdef\bbljun{Jun}
+	\gdef\bbljul{Jul}
+	\gdef\bblaug{Aug}
+	\gdef\bblsep{Sep}
+	\gdef\bbloct{Oct}
+	\gdef\bblnov{Nov}
+	\gdef\bbldec{Dec}
 }
 
 %----------------------------------------------------------------------------------
@@ -351,120 +351,120 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 \newdimen\PP@tmpdim
 \renewcommand\maketitle{%
 \begin{titlepage}%
-    \renewcommand*{\baselinestretch}{1.0}%
-    \hoffset=-1in
-    \voffset=-1in
-    \hsize=\paperwidth
-    \vsize=\paperheight
-    \textwidth=\paperwidth
-    \textheight=\paperheight
-    \evensidemargin0pt
-    \oddsidemargin0pt
-    \topmargin0pt
-    \headheight0pt
-    \headsep0pt
-    \topskip0pt
-    \footskip0pt
-    \columnsep0pt
-    \columnseprule0pt
-    \columnwidth0pt
-    \marginparpush0pt
-    \marginparsep0pt
-    \marginparwidth0pt
-    \global\let\thanks\relax
-    \global\let\date\relax
-    \global\let\@thanks\@empty
-    \global\let\@date\@empty
-    \let\footnote\thanks
-    \normalfont\normalsize
-    \vbox to \vsize{%
-        \boxmaxdepth=0pt
-        \parindent0pt
-        \parfillskip0pt
-        \parskip0pt
-        \leftskip0pt
-        \rightskip0pt
-        \lineskiplimit0pt
-        \lineskip0pt
-        \kern4ex\par
-        %----------------------------------------------------------------------------------
-        % Cabeçalho (universidade + faculdade + programa)
-        %----------------------------------------------------------------------------------
-        \setbox\PP@tmpbox=\vbox{%
-            \leftskip0pt plus1fil
-            \rightskip0pt plus1fil
-            \hyphenpenalty 10000\relax
-            \bfseries
-            \noindent\MakeUppercase{\PP@Uni}\par
-            \noindent\MakeUppercase{\PP@Fac}\par
-            \noindent\MakeUppercase{\PP@Dep}\par
-        }%
-        \PP@tmpdim=9.5cm
-        \advance\PP@tmpdim by-4ex
-        \advance\PP@tmpdim by-\ht\PP@tmpbox
-        \advance\PP@tmpdim by-\dp\PP@tmpbox
-        \box\PP@tmpbox\par\nointerlineskip
-        \kern\PP@tmpdim\par
-        %----------------------------------------------------------------------------------
-        % Retângulo central (título + autor)
-        %----------------------------------------------------------------------------------
-        \hbox{\kern5cm\vbox to 7.7cm{%
-            \hsize=11.5cm
-            \parskip6ex
-            \parindent0pt
-            \leftskip0pt plus1fil
-            \rightskip0pt plus1fil
-            \leavevmode\kern2.5em\vbox{%
-                \advance\hsize by-5em
-                \bfseries
-                %\lineskip.25\baselineskip
-                \baselineskip1.2\baselineskip
-                \lineskip0pt
-                \lineskiplimit0pt
-                \noindent\hbox{}\par\nointerlineskip
-                \noindent{\Large\expandafter\uppercase\expandafter{\@title}}\par
-                \noindent{\large\expandafter\uppercase\expandafter{\@author}}\par\nointerlineskip
-                \vfil\hbox{}%
-            }\kern2.5em
-        }}\par\nointerlineskip
-        \kern7.5ex\par
-        %----------------------------------------------------------------------------------
-        % Descrição da monografia ("Tese apresentada como requisito...")
-        %----------------------------------------------------------------------------------
-        \hbox{}\hfill\vbox{%
-            \hsize=23cm
-            \parfillskip0pt plus1fil
-            \divide\hsize by3\relax
-            \leftskip0pt
-            \rightskip0pt
-            \hyphenpenalty=10000\relax
-            \emergencystretch=2em
-            \noindent\PP@descricao
-        }\kern35pt\par\nointerlineskip
-        \kern7.5ex\par
-        %----------------------------------------------------------------------------------
-        % Orientador / Co-Orientador
-        %----------------------------------------------------------------------------------
-        \vbox{%
-            \leftskip0pt plus1fil
-            \rightskip0pt plus1fil
-            \noindent\hbox{\PP@orientadorname{}: Prof.\ \PP@orientador}%
-            \ifx\PP@coorientador\PP@undef\relax
-            \else\par\noindent\hbox{Co-\PP@orientadorname{}: Prof.\ \PP@coorientador}\fi
-        }\par\nointerlineskip%
-        \vfill\par
-        %----------------------------------------------------------------------------------
-        % Cidade / ano
-        %----------------------------------------------------------------------------------
-        \vbox{%
-            \leftskip0pt plus1fil
-            \rightskip0pt plus1fil
-            \bfseries
-            \noindent\hbox{\PP@Cid}\par
-            \noindent\hbox{\number\year}%
-        }\par\nointerlineskip
-        \kern3ex\par
-    }%
+	\renewcommand*{\baselinestretch}{1.0}%
+	\hoffset=-1in
+	\voffset=-1in
+	\hsize=\paperwidth
+	\vsize=\paperheight
+	\textwidth=\paperwidth
+	\textheight=\paperheight
+	\evensidemargin0pt
+	\oddsidemargin0pt
+	\topmargin0pt
+	\headheight0pt
+	\headsep0pt
+	\topskip0pt
+	\footskip0pt
+	\columnsep0pt
+	\columnseprule0pt
+	\columnwidth0pt
+	\marginparpush0pt
+	\marginparsep0pt
+	\marginparwidth0pt
+	\global\let\thanks\relax
+	\global\let\date\relax
+	\global\let\@thanks\@empty
+	\global\let\@date\@empty
+	\let\footnote\thanks
+	\normalfont\normalsize
+	\vbox to \vsize{%
+		\boxmaxdepth=0pt
+		\parindent0pt
+		\parfillskip0pt
+		\parskip0pt
+		\leftskip0pt
+		\rightskip0pt
+		\lineskiplimit0pt
+		\lineskip0pt
+		\kern4ex\par
+		%----------------------------------------------------------------------------------
+		% Cabeçalho (universidade + faculdade + programa)
+		%----------------------------------------------------------------------------------
+		\setbox\PP@tmpbox=\vbox{%
+			\leftskip0pt plus1fil
+			\rightskip0pt plus1fil
+			\hyphenpenalty 10000\relax
+			\bfseries
+			\noindent\MakeUppercase{\PP@Uni}\par
+			\noindent\MakeUppercase{\PP@Fac}\par
+			\noindent\MakeUppercase{\PP@Dep}\par
+		}%
+		\PP@tmpdim=9.5cm
+		\advance\PP@tmpdim by-4ex
+		\advance\PP@tmpdim by-\ht\PP@tmpbox
+		\advance\PP@tmpdim by-\dp\PP@tmpbox
+		\box\PP@tmpbox\par\nointerlineskip
+		\kern\PP@tmpdim\par
+		%----------------------------------------------------------------------------------
+		% Retângulo central (título + autor)
+		%----------------------------------------------------------------------------------
+		\hbox{\kern5cm\vbox to 7.7cm{%
+			\hsize=11.5cm
+			\parskip6ex
+			\parindent0pt
+			\leftskip0pt plus1fil
+			\rightskip0pt plus1fil
+			\leavevmode\kern2.5em\vbox{%
+				\advance\hsize by-5em
+				\bfseries
+				%\lineskip.25\baselineskip
+				\baselineskip1.2\baselineskip
+				\lineskip0pt
+				\lineskiplimit0pt
+				\noindent\hbox{}\par\nointerlineskip
+				\noindent{\Large\expandafter\uppercase\expandafter{\@title}}\par
+				\noindent{\large\expandafter\uppercase\expandafter{\@author}}\par\nointerlineskip
+				\vfil\hbox{}%
+			}\kern2.5em
+		}}\par\nointerlineskip
+		\kern7.5ex\par
+		%----------------------------------------------------------------------------------
+		% Descrição da monografia ("Tese apresentada como requisito...")
+		%----------------------------------------------------------------------------------
+		\hbox{}\hfill\vbox{%
+			\hsize=23cm
+			\parfillskip0pt plus1fil
+			\divide\hsize by3\relax
+			\leftskip0pt
+			\rightskip0pt
+			\hyphenpenalty=10000\relax
+			\emergencystretch=2em
+			\noindent\PP@descricao
+		}\kern35pt\par\nointerlineskip
+		\kern7.5ex\par
+		%----------------------------------------------------------------------------------
+		% Orientador / Co-Orientador
+		%----------------------------------------------------------------------------------
+		\vbox{%
+			\leftskip0pt plus1fil
+			\rightskip0pt plus1fil
+			\noindent\hbox{\PP@orientadorname{}: Prof.\ \PP@orientador}%
+			\ifx\PP@coorientador\PP@undef\relax
+			\else\par\noindent\hbox{Co-\PP@orientadorname{}: Prof.\ \PP@coorientador}\fi
+		}\par\nointerlineskip%
+		\vfill\par
+		%----------------------------------------------------------------------------------
+		% Cidade / ano
+		%----------------------------------------------------------------------------------
+		\vbox{%
+			\leftskip0pt plus1fil
+			\rightskip0pt plus1fil
+			\bfseries
+			\noindent\hbox{\PP@Cid}\par
+			\noindent\hbox{\number\year}%
+		}\par\nointerlineskip
+		\kern3ex\par
+	}%
 \end{titlepage}%
 \global\let\maketitle\relax
 \global\let\@author\@empty
@@ -497,20 +497,20 @@ e-mail <rfbpiccoli at gmail dot com>^^J
    \cleardoublepage%
    \thispagestyle{empty}%
    \vbox to\textheight{%
-      \parfillskip0pt
-      \parskip0pt
-      %\baselineskip0pt
-      \parindent0pt
-      \leftskip0pt plus1fil
-      \rightskip0pt plus1fil
-      \vss\par\nointerlineskip
-      \hbox to\hsize{%
-         \hss
-         \vbox{\hsize=11.5cm\bfseries\Huge\MakeTextUppercase{#1}}%
-         \hss
-      }%
-      \par\nointerlineskip
-      \vss
+	  \parfillskip0pt
+	  \parskip0pt
+	  %\baselineskip0pt
+	  \parindent0pt
+	  \leftskip0pt plus1fil
+	  \rightskip0pt plus1fil
+	  \vss\par\nointerlineskip
+	  \hbox to\hsize{%
+		 \hss
+		 \vbox{\hsize=11.5cm\bfseries\Huge\MakeTextUppercase{#1}}%
+		 \hss
+	  }%
+	  \par\nointerlineskip
+	  \vss
    }%
    \newpage%
 }
@@ -529,21 +529,21 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % Formata uma página de capítulo pré-textual genérica
 %----------------------------------------------------------------------------------
 \newenvironment{pretextual}[1]
-     {%
-       %\if@openright\cleardoublepage\else\clearpage\fi
-       \cleardoublepage
-       \thispagestyle{empty}%
+	 {%
+	   %\if@openright\cleardoublepage\else\clearpage\fi
+	   \cleardoublepage
+	   \thispagestyle{empty}%
 %      \@afterindentfalse
-       {\parindent\z@
-        \centering
-        \normalfont
-        \interlinepenalty\@M
-        \bfseries\MakeUppercase{#1}\par\nointerlineskip\nobreak
-        \normalfont\normalsize
-        \vskip 19.5ex}%
-       \@afterheading
-     }%
-     {\newpage}
+	   {\parindent\z@
+		\centering
+		\normalfont
+		\interlinepenalty\@M
+		\bfseries\MakeUppercase{#1}\par\nointerlineskip\nobreak
+		\normalfont\normalsize
+		\vskip 19.5ex}%
+	   \@afterheading
+	 }%
+	 {\newpage}
 
 %----------------------------------------------------------------------------------
 % Dedicatória
@@ -551,10 +551,10 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #1: texto da dedicatória.
 %----------------------------------------------------------------------------------
 \newcommand{\dedicatoria}[1]{%
-    \begin{pretextual}{\PP@dedicatorianame}%
-      #1\relax
-    \end{pretextual}%
-    \global\let\PP@dedicatorianame\@empty
+	\begin{pretextual}{\PP@dedicatorianame}%
+	  #1\relax
+	\end{pretextual}%
+	\global\let\PP@dedicatorianame\@empty
 }
 
 %----------------------------------------------------------------------------------
@@ -564,14 +564,14 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #2: autor.
 %----------------------------------------------------------------------------------
 \newcommand{\PP@epigrafe}[2]{%
-    \hbox to\textwidth{%
-        \hss\vbox{%
-           \hsize=3.32in
-           \parindent0pt
-          ``#1''\par
-          (#2)\relax
-        }%
-    }%
+	\hbox to\textwidth{%
+		\hss\vbox{%
+		   \hsize=3.32in
+		   \parindent0pt
+		  ``#1''\par
+		  (#2)\relax
+		}%
+	}%
 }
 
 %----------------------------------------------------------------------------------
@@ -581,17 +581,17 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #2: autor (sem parênteses)
 %----------------------------------------------------------------------------------
 \newcommand{\epigrafe}[2]{%
-    %\if@openright\cleardoublepage\else\clearpage\fi
-    \cleardoublepage
-    \thispagestyle{empty}%
-    \normalfont\normalsize
-    \vbox to\textheight{%
-        \parskip0pt
-        \parindent0pt
-        \vss
-        \noindent\PP@epigrafe{#1}{#2}%
-    }%
-    \newpage%
+	%\if@openright\cleardoublepage\else\clearpage\fi
+	\cleardoublepage
+	\thispagestyle{empty}%
+	\normalfont\normalsize
+	\vbox to\textheight{%
+		\parskip0pt
+		\parindent0pt
+		\vss
+		\noindent\PP@epigrafe{#1}{#2}%
+	}%
+	\newpage%
 }
 
 %----------------------------------------------------------------------------------
@@ -602,13 +602,13 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #3: autor (sem parênteses)
 %----------------------------------------------------------------------------------
 \newcommand{\dedigrafe}[3]{%
-    \dedicatoria{%
-        \parskip0pt
-        #1\par\nointerlineskip
-        \vfill
-        \normalfont\normalsize
-        \noindent\PP@epigrafe{#2}{#3}%
-    }%
+	\dedicatoria{%
+		\parskip0pt
+		#1\par\nointerlineskip
+		\vfill
+		\normalfont\normalsize
+		\noindent\PP@epigrafe{#2}{#3}%
+	}%
 }%
 
 %----------------------------------------------------------------------------------
@@ -630,35 +630,35 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #4: palavras-chave
 %----------------------------------------------------------------------------------
 \newenvironment{PP@abstract}[4]
-    {%
-      \def\PP@kwname{#2}%
-      \def\PP@kwtext{#4}%
-      %\if@openright\cleardoublepage\else\clearpage\fi
-      \cleardoublepage
-      \thispagestyle{empty}%
-      {%
-       \parindent\z@
-       \centering
-       \normalfont
-       \interlinepenalty\@M
-       \large\bfseries\MakeUppercase{#3}\par\nointerlineskip\nobreak
-       \normalfont\normalsize
-       \vskip 19.5ex
-      }%
-      {%
-       \parindent\z@
-       \centering
-       \normalfont
-       \interlinepenalty\@M
-       \bfseries\MakeUppercase{#1}\par\nointerlineskip\nobreak
-       \normalfont\normalsize
-       \vskip 19.5ex
-      }%
-      \@afterheading
+	{%
+	  \def\PP@kwname{#2}%
+	  \def\PP@kwtext{#4}%
+	  %\if@openright\cleardoublepage\else\clearpage\fi
+	  \cleardoublepage
+	  \thispagestyle{empty}%
+	  {%
+	   \parindent\z@
+	   \centering
+	   \normalfont
+	   \interlinepenalty\@M
+	   \large\bfseries\MakeUppercase{#3}\par\nointerlineskip\nobreak
+	   \normalfont\normalsize
+	   \vskip 19.5ex
+	  }%
+	  {%
+	   \parindent\z@
+	   \centering
+	   \normalfont
+	   \interlinepenalty\@M
+	   \bfseries\MakeUppercase{#1}\par\nointerlineskip\nobreak
+	   \normalfont\normalsize
+	   \vskip 19.5ex
+	  }%
+	  \@afterheading
    }%
    {\null\vskip 2cm
    \begin{description}%
-     \item[\PP@kwname{}:] \PP@kwtext{}.%
+	 \item[\PP@kwname{}:] \PP@kwtext{}.%
    \end{description}%
    \let\PP@kwname\@empty
    \let\PP@kwtext\@empty
@@ -670,11 +670,11 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #1: palavras-chave
 %----------------------------------------------------------------------------------
 \newenvironment{resumo}[1]%
-    {\begin{hyphenrules}{brazil}%
-     \begin{PP@abstract}{Resumo}{Palavras-Chave}{\@titlept}{#1}}%
-    {\global\let\@titlept\@empty
-     \end{PP@abstract}%
-     \end{hyphenrules}}
+	{\begin{hyphenrules}{brazil}%
+	 \begin{PP@abstract}{Resumo}{Palavras-Chave}{\@titlept}{#1}}%
+	{\global\let\@titlept\@empty
+	 \end{PP@abstract}%
+	 \end{hyphenrules}}
 
 %----------------------------------------------------------------------------------
 % Resumo em língua inglesa
@@ -682,11 +682,11 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % #1: palavras-chave
 %----------------------------------------------------------------------------------
 \renewenvironment{abstract}[1]%
-    {\begin{hyphenrules}{english}%
-     \begin{PP@abstract}{Abstract}{Keywords}{\@titleen}{#1}}%
-    {\global\let\@titleen\@empty
-     \end{PP@abstract}%
-     \end{hyphenrules}}
+	{\begin{hyphenrules}{english}%
+	 \begin{PP@abstract}{Abstract}{Keywords}{\@titleen}{#1}}%
+	{\global\let\@titleen\@empty
+	 \end{PP@abstract}%
+	 \end{hyphenrules}}
 
 %----------------------------------------------------------------------------------
 % Lista de algoritmos
@@ -701,17 +701,17 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 }
 \newcounter{algorithm}[chapter]
 \renewcommand \thealgorithm
-     {\ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@algorithm}
+	 {\ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@algorithm}
 \def\ftype@algorithm{2}
 \def\fps@algorithm{htbp}
 \def\ext@algorithm{loa}
 \def\fnum@algorithm{\algorithmname\nobreakspace\thealgorithm}
 \newenvironment{algorithm}
-               {\@float{algorithm}}
-               {\end@float}
+			   {\@float{algorithm}}
+			   {\end@float}
 \newenvironment{algorithm*}
-               {\@dblfloat{algorithm}}
-               {\end@dblfloat}
+			   {\@dblfloat{algorithm}}
+			   {\end@dblfloat}
 \newcommand\listofalgorithms{\chapter*{\listalgorithmname}\@starttoc{loa}}
 %----------------------------------------------------------------------------------
 % Lista de siglas
@@ -794,16 +794,16 @@ e-mail <rfbpiccoli at gmail dot com>^^J
   \let\@mkboth\markboth
 \def\chaptermark##1{%
   \markboth {\MakeUppercase{%
-    \ifnum \c@secnumdepth >\m@ne
-        \@chapapp\ \thechapter. \ %
-    \fi
-    ##1}}{}}%
+	\ifnum \c@secnumdepth >\m@ne
+		\@chapapp\ \thechapter. \ %
+	\fi
+	##1}}{}}%
 \def\sectionmark##1{%
   \markright {\MakeUppercase{%
-    \ifnum \c@secnumdepth >\z@
-      \thesection. \ %
-    \fi
-    ##1}}}}
+	\ifnum \c@secnumdepth >\z@
+	  \thesection. \ %
+	\fi
+	##1}}}}
 
 %----------------------------------------------------------------------------------
 % Redefinindo o comando interno do LaTeX para formatar legendas,
@@ -813,16 +813,16 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 \long\def\@caption#1[#2]#3{%
   \par
   \addcontentsline{\csname ext@#1\endcsname}{#1}%
-    % Aqui
+	% Aqui
    %{\protect\numberline{\csname the#1\endcsname}{\ignorespaces #2}}%
-    {\csname #1name\endcsname\nobreakspace\protect\numberline{\csname the#1\endcsname\hfil\nobreakspace--\nobreakspace}{\ignorespaces #2}}%
+	{\csname #1name\endcsname\nobreakspace\protect\numberline{\csname the#1\endcsname\hfil\nobreakspace--\nobreakspace}{\ignorespaces #2}}%
   \begingroup
-    \@parboxrestore
-    \if@minipage
-      \@setminipage
-    \fi
-    \normalsize
-    \@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
+	\@parboxrestore
+	\if@minipage
+	  \@setminipage
+	\fi
+	\normalsize
+	\@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
   \endgroup}
 
 %----------------------------------------------------------------------------------
@@ -837,10 +837,10 @@ e-mail <rfbpiccoli at gmail dot com>^^J
   \ifdim \wd\@tempboxa >\hsize
   % Aqui
 %    #1: #2\par
-    #1 -- #2\par
+	#1 -- #2\par
   \else
-    \global \@minipagefalse
-    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+	\global \@minipagefalse
+	\hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
   \fi
   \vskip\belowcaptionskip}
 
@@ -849,81 +849,89 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % configurar o estilo da página para o resto do trabalho.
 %----------------------------------------------------------------------------------
 \renewcommand\tableofcontents{%
-    % Desnecessário
-    \if@twocolumn
-      \@restonecoltrue\onecolumn
-    \else
-      \@restonecolfalse
-    \fi
-    \chapter*{\contentsname
-        \@mkboth{%
-           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
-    \@starttoc{toc}%
-    % Desnecessário
-    \if@restonecol\twocolumn\fi
-    % Aqui
-    %\if@openright\cleardoublepage\else\clearpage\fi
-    \cleardoublepage
-    \pagestyle{headings}%
-    }
+
+% \begin{KeepFromToc}
+
+	% Desnecessário
+	\if@twocolumn
+	  \@restonecoltrue\onecolumn
+	\else
+	  \@restonecolfalse
+	\fi
+	\chapter*{\contentsname
+		\@mkboth{%
+		   \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+	\@starttoc{toc}%
+		  \addcontentsline{toc}{chapter}{\contentsname}
+	% Desnecessário
+	\if@restonecol\twocolumn\fi
+	% Aqui
+	%\if@openright\cleardoublepage\else\clearpage\fi
+	\cleardoublepage
+	\pagestyle{headings}%
+
+% \end{KeepFromToc}
+
+	}
 
 %----------------------------------------------------------------------------------
 % Redefinindo o formato dos capítulos e seções...
 %----------------------------------------------------------------------------------
 \renewcommand\chapter{%\if@openright\cleardoublepage\else\clearpage\fi
-                      \cleardoublepage
-                     % Aqui
+					  \cleardoublepage
+					 % Aqui
 %                    \thispagestyle{plain}%
-                    \global\@topnum\z@
-                     % Aqui
+					\global\@topnum\z@
+					 % Aqui
 %                    \@afterindentfalse
-                    \secdef\@chapter\@schapter}
+					\secdef\@chapter\@schapter}
 % Capítulos com numeração ficam alinhados à esquerda com número e
 % a mesma indentação do parágrafo (após o número).
-\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne
-                         \refstepcounter{chapter}%
-                         \typeout{\thechapter.}%
-                         \addcontentsline{toc}{chapter}%
-                         % Aqui
-                         {\protect\numberline{\thechapter}\MakeTextUppercase{#1}}%
-                    \else
-                        % Aqui
-                        \addcontentsline{toc}{chapter}{\MakeTextUppercase{#1}}%
-                    \fi
-                    \chaptermark{#1}%
-                    % Coloca um espaço vertical entre figuras de capítulos diferentes.
-                    % Aqui
+\def\@chapter[#1]#2{
+	\ifnum 
+		\c@secnumdepth >\m@ne
+		\refstepcounter{chapter}%
+		\typeout{\thechapter.}%
+		% \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}{\arabic{chapter}. \texorpdfstring{\MakeUppercase{#1}}{#1} }}
+		\addcontentsline{toc}{chapter}{\thechapter{. \texorpdfstring{\MakeUppercase{#1}}{#1} }}
+	\else
+		\addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}{#1}}
+	\fi
+					
+					\chaptermark{#1}%
+					% Coloca um espaço vertical entre figuras de capítulos diferentes.
+					% Aqui
 %                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
 %                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
-                    \if@twocolumn
-                      \@topnewpage[\@makechapterhead{#2}]%
-                    \else
-                      \@makechapterhead{#2}%
-                      \@afterheading
-                    \fi}
+					\if@twocolumn
+					  \@topnewpage[\@makechapterhead{#2}]%
+					\else
+					  \@makechapterhead{#2}%
+					  \@afterheading
+					\fi}
 \def\@makechapterhead#1{%
   {\parindent\z@ \raggedright
-    \normalfont
-    \interlinepenalty\@M
-    \leavevmode\hbox to 4em{\large\bfseries\thechapter.\ }%
+	\normalfont
+	\interlinepenalty\@M
+	\leavevmode\hbox to 4em{\large\bfseries\thechapter.\ }%
 %    \large\bfseries\expandafter\uppercase\expandafter{#1}\par\nointerlineskip\nobreak%
-    % Aqui
-    \large\bfseries\MakeTextUppercase{#1}\par\nointerlineskip\nobreak
-    \normalfont\normalsize
-    \vskip 6ex
+	% Aqui
+	\large\bfseries\MakeTextUppercase{#1}\par\nointerlineskip\nobreak
+	\normalfont\normalsize
+	\vskip 6ex
   }}
 % Capítulos sem numeração ficam centralizados (sumário, listas, resumo, etc.)
 \def\@schapter#1{\@makeschapterhead{#1}%
-                 \@afterheading}
+				 \@afterheading}
 \def\@makeschapterhead#1{%
   {\parindent\z@
-    \centering
-    \normalfont
-    \interlinepenalty\@M
-    % Aqui
-    \large\bfseries\MakeTextUppercase{#1}\par\nointerlineskip\nobreak
-    \normalfont\normalsize
-    \vskip 6ex
+	\centering
+	\normalfont
+	\interlinepenalty\@M
+	% Aqui
+	\large\bfseries\MakeTextUppercase{#1}\par\nointerlineskip\nobreak
+	\normalfont\normalsize
+	\vskip 6ex
   }}
 %----------------------------------------------------------------------------------
 % Redefinindo comando para formatar capítulos no sumário,
@@ -931,27 +939,27 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 %----------------------------------------------------------------------------------
 \renewcommand*\l@chapter[2]{%
   \ifnum \c@tocdepth >\m@ne
-    \addpenalty{-\@highpenalty}%
-    \vskip 1.0em \@plus\p@
-    {\leftskip \z@\relax \rightskip \@tocrmarg \parfillskip -\rightskip
-     \parindent \z@ \relax\@afterindenttrue
-     \interlinepenalty\@M
-     \leavevmode
-     \@tempdima 3.2em
-     \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+	\addpenalty{-\@highpenalty}%
+	\vskip 1.0em \@plus\p@
+	{\leftskip \z@\relax \rightskip \@tocrmarg \parfillskip -\rightskip
+	 \parindent \z@ \relax\@afterindenttrue
+	 \interlinepenalty\@M
+	 \leavevmode
+	 \@tempdima 3.2em
+	 \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
 %     % Aqui
 %     \setbox\PP@tmpbox=\hbox{#2}%
 %     \PP@tmpdim=\wd\PP@tmpbox
 %     \edef\@pnumwidth{\PP@tmpdim}%
 %     %---
-     {\bfseries#1}\nobreak
-     \leaders\hbox{$\m@th
-        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
-        mu$}\hfill
-     \nobreak
-     \hb@xt@\@pnumwidth{\hfil\normalfont \normalcolor\bfseries #2}%
-     \par
-     \penalty\@highpenalty}%
+	 {\bfseries#1}\nobreak
+	 \leaders\hbox{$\m@th
+		\mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+		mu$}\hfill
+	 \nobreak
+	 \hb@xt@\@pnumwidth{\hfil\normalfont \normalcolor\bfseries #2}%
+	 \par
+	 \penalty\@highpenalty}%
   \fi}
 %----------------------------------------------------------------------------------
 % Redefinindo comando para formatar seções no sumário,
@@ -978,40 +986,41 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % nomes de capítulos e seções em maiúsculo no sumário...
 %----------------------------------------------------------------------------------
 \def\@sect#1#2#3#4#5#6[#7]#8{%
-  \ifnum #2>\c@secnumdepth
-    \let\@svsec\@empty
-  \else
-    \refstepcounter{#1}%
-    \protected@edef\@svsec{\@seccntformat{#1}\relax}%
-  \fi
+
+	\ifnum #2>\c@secnumdepth
+		\let\@svsec\@empty
+	\else
+		\refstepcounter{#1}%
+		\protected@edef\@svsec{\@seccntformat{#1}\relax}%
+	\fi
+
+	\ifnum #2>\c@secnumdepth 
+		\addcontentsline{toc}{#1}{\protect\numberline{\csname the#1\endcsname}#7}
+	\else
+		\addcontentsline{toc}{#1}{\protect\numberline{\csname the#1\endcsname}#7}
+	\fi
+
   \@tempskipa #5\relax
   \ifdim \@tempskipa>\z@
-    \begingroup
-      #6{%
-        \@hangfrom{\hskip #3\relax\@svsec}%
-          \interlinepenalty \@M #8\@@par}%
-    \endgroup
-    \csname #1mark\endcsname{#7}%
-    \addcontentsline{toc}{#1}{%
-      \ifnum #2>\c@secnumdepth \else
-        \protect\numberline{\csname the#1\endcsname}%
-      \fi
-%      #7}%
-      % Aqui
-      \MakeTextUppercase{#7}}%
+	\begingroup
+	  #6{%
+		\@hangfrom{\hskip #3\relax\@svsec}%
+		  \interlinepenalty \@M #8\@@par}%
+	\endgroup
+	\csname #1mark\endcsname{#7}%
+
   \else
-    \def\@svsechd{%
-      #6{\hskip #3\relax
-      \@svsec #8}%
-      \csname #1mark\endcsname{#7}%
-      \addcontentsline{toc}{#1}{%
-        \ifnum #2>\c@secnumdepth \else
-          \protect\numberline{\csname the#1\endcsname}%
-        \fi
-%        #7}}%
-        % Aqui
-        \MakeTextUppercase{#7}}}%
+	\def\@svsechd{%
+	  #6{\hskip #3\relax
+	  \@svsec #8}%
+	  \csname #1mark\endcsname{#7}%
+	  \addcontentsline{toc}{#1}{%
+		\ifnum #2>\c@secnumdepth \else
+			\protect\numberline{\csname the#1\endcsname}%
+		\fi
+		#7}}%
   \fi
+
   \@xsect{#5}}
 
 %----------------------------------------------------------------------------------
@@ -1024,26 +1033,27 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 %----------------------------------------------------------------------------------
 \renewcommand\section{\@startsection{section}{1}{\z@}%
 %                                   {4ex \@plus 1ex \@minus .2ex}%
-                                   {3.5ex \@plus 1ex \@minus .2ex}%
-                                   {5.2ex \@plus.2ex}%
-                                   {\normalfont\bfseries}}
+								   {3.5ex \@plus 1ex \@minus .2ex}%
+								   {5.2ex \@plus.2ex}%
+								   {\normalfont\bfseries}}
 \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
 %                                    {4ex \@plus 1ex \@minus .2ex}%
-                                     {3.5ex \@plus 1ex \@minus .2ex}%
-                                     {5.2ex \@plus.2ex}%
-                                     {\normalfont\normalsize}}
+									 {3.5ex \@plus 1ex \@minus .2ex}%
+									 {5.2ex \@plus.2ex}%
+									 {\normalfont\normalsize}}
 \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
-                                     {3.25ex \@plus 1ex \@minus .2ex}%
-                                     {1.5ex \@plus.2ex}%
-                                     {\normalfont\normalsize}}
+									 {3.25ex \@plus 1ex \@minus .2ex}%
+									 {1.5ex \@plus.2ex}%
+									 {\normalfont\normalsize}}
 \renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-                                    {3.25ex \@plus 1ex \@minus .2ex}%
-                                    {1em}%
-                                    {\normalfont\normalsize}}
+									{3.25ex \@plus 1ex \@minus .2ex}%
+									{1em}%
+									{\normalfont\normalsize}}
 \renewcommand\subparagraph{\@startsection{subparagraph}{5}{\parindent}%
-                                      {3.25ex \@plus 1ex \@minus .2ex}%
-                                      {1em}%
-                                      {\normalfont\normalsize}}
+									  {3.25ex \@plus 1ex \@minus .2ex}%
+									  {1em}%
+									  {\normalfont\normalsize}}
+
 
 %----------------------------------------------------------------------------------
 % Ambiente para inserir citações diretas com mais de 3 linhas.
@@ -1060,36 +1070,36 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 %
 %----------------------------------------------------------------------------------
 \newenvironment{directcite}%
-    {\par\begin{singlespace}\hangafter=0\hangindent=4cm\footnotesize}%\small}%
-    {\end{singlespace}\par}%
+	{\par\begin{singlespace}\hangafter=0\hangindent=4cm\footnotesize}%\small}%
+	{\end{singlespace}\par}%
 
 %----------------------------------------------------------------------------------
 % Redefinindo bibliografias, para aparecer no sumário.
 %----------------------------------------------------------------------------------
 \renewenvironment{thebibliography}[1]
-     {\chapter*{\bibname}%
-      % Aqui
-      \addcontentsline{toc}{chapter}%
-      % e aqui
-      %{\protect\numberline{\thechapter}\expandafter\uppercase\expandafter{\PP@bibname}}%
-      {\protect\numberline{\null}\expandafter\uppercase\expandafter{\PP@bibname}}%
-      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-      \list{\@biblabel{\@arabic\c@enumiv}}%
-           {\settowidth\labelwidth{\@biblabel{#1}}%
-            \leftmargin\labelwidth
-            \advance\leftmargin\labelsep
-            \@openbib@code
-            \usecounter{enumiv}%
-            \let\p@enumiv\@empty
-            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-      \sloppy
-      \clubpenalty4000
-      \@clubpenalty \clubpenalty
-      \widowpenalty4000%
-      \sfcode`\.\@m}
-     {\def\@noitemerr
-       {\@latex@warning{Empty `thebibliography' environment}}%
-      \endlist\global\let\PP@bibname\@empty}
+	 {\chapter*{\bibname}%
+	  % Aqui
+	  \addcontentsline{toc}{chapter}%
+	  % e aqui
+	  %{\protect\numberline{\thechapter}\expandafter\uppercase\expandafter{\PP@bibname}}%
+	  {\protect\numberline{\null}\expandafter\uppercase\expandafter{\PP@bibname}}%
+	  \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+	  \list{\@biblabel{\@arabic\c@enumiv}}%
+		   {\settowidth\labelwidth{\@biblabel{#1}}%
+			\leftmargin\labelwidth
+			\advance\leftmargin\labelsep
+			\@openbib@code
+			\usecounter{enumiv}%
+			\let\p@enumiv\@empty
+			\renewcommand\theenumiv{\@arabic\c@enumiv}}%
+	  \sloppy
+	  \clubpenalty4000
+	  \@clubpenalty \clubpenalty
+	  \widowpenalty4000%
+	  \sfcode`\.\@m}
+	 {\def\@noitemerr
+	   {\@latex@warning{Empty `thebibliography' environment}}%
+	  \endlist\global\let\PP@bibname\@empty}
 
 %----------------------------------------------------------------------------------
 % Redefinindo o apêndice
@@ -1103,33 +1113,33 @@ e-mail <rfbpiccoli at gmail dot com>^^J
   %\gdef\thechapter{\expandafter\uppercase\expandafter{\appendixname}\nobreakspace\@Alph\c@chapter}%
   \gdef\thechapter{\@Alph\c@chapter}%
   \gdef\@chapter[##1]##2{\ifnum \c@secnumdepth >\m@ne
-                           \refstepcounter{chapter}%
-                           \typeout{\@chapupp\space\thechapter.}%
-                           \addcontentsline{toc}{chapter}%
-                           {\protect\numberline{}\@chapupp\nobreakspace\thechapter\nobreakspace--\nobreakspace\protect\normalfont##1}%
-                      \else
-                          \addcontentsline{toc}{chapter}{##1}%
-                      \fi
-                      \chaptermark{##1}%
-                      % Coloca um espaço vertical entre figuras de capítulos diferentes.
-                      % Aqui
+						   \refstepcounter{chapter}%
+						   \typeout{\@chapupp\space\thechapter.}%
+						   \addcontentsline{toc}{chapter}%
+						   {\protect\numberline{}\@chapupp\nobreakspace\thechapter\nobreakspace--\nobreakspace\protect\normalfont##1}%
+					  \else
+						  \addcontentsline{toc}{chapter}{##1}%
+					  \fi
+					  \chaptermark{##1}%
+					  % Coloca um espaço vertical entre figuras de capítulos diferentes.
+					  % Aqui
   %                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
   %                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
-                      \if@twocolumn
-                        \@topnewpage[\@makechapterhead{##2}]%
-                      \else
-                        \@makechapterhead{##2}%
-                        \@afterheading
-                      \fi}%
+					  \if@twocolumn
+						\@topnewpage[\@makechapterhead{##2}]%
+					  \else
+						\@makechapterhead{##2}%
+						\@afterheading
+					  \fi}%
   \gdef\@makechapterhead##1{%
-    {\parindent\z@
-      \centering
-      \normalfont
-      \interlinepenalty\@M
-      \large\bfseries\MakeTextUppercase{\@chapapp\nobreakspace\thechapter\nobreakspace--\nobreakspace ##1}\par\nointerlineskip\nobreak
-      \normalfont\normalsize
-      \vskip 6ex
-    }}%
+	{\parindent\z@
+	  \centering
+	  \normalfont
+	  \interlinepenalty\@M
+	  \large\bfseries\MakeTextUppercase{\@chapapp\nobreakspace\thechapter\nobreakspace--\nobreakspace ##1}\par\nointerlineskip\nobreak
+	  \normalfont\normalsize
+	  \vskip 6ex
+	}}%
 }
 
 %----------------------------------------------------------------------------------
@@ -1149,33 +1159,33 @@ e-mail <rfbpiccoli at gmail dot com>^^J
   %\gdef\thechapter{\expandafter\uppercase\expandafter{\appendixname}\nobreakspace\@Alph\c@chapter}%
   \gdef\thechapter{\@Alph\c@chapter}%
   \gdef\@chapter[##1]##2{\ifnum \c@secnumdepth >\m@ne
-                           \refstepcounter{chapter}%
-                           \typeout{\@chapupp\space\thechapter.}%
-                           \addcontentsline{toc}{chapter}%
-                           {\protect\numberline{}\@chapupp\nobreakspace\thechapter\nobreakspace--\nobreakspace\protect\normalfont##1}%
-                      \else
-                          \addcontentsline{toc}{chapter}{##1}%
-                      \fi
-                      \chaptermark{##1}%
-                      % Coloca um espaço vertical entre figuras de capítulos diferentes.
-                      % Aqui
+						   \refstepcounter{chapter}%
+						   \typeout{\@chapupp\space\thechapter.}%
+						   \addcontentsline{toc}{chapter}%
+						   {\protect\numberline{}\@chapupp\nobreakspace\thechapter\nobreakspace--\nobreakspace\protect\normalfont##1}%
+					  \else
+						  \addcontentsline{toc}{chapter}{##1}%
+					  \fi
+					  \chaptermark{##1}%
+					  % Coloca um espaço vertical entre figuras de capítulos diferentes.
+					  % Aqui
   %                    \addtocontents{lof}{\protect\addvspace{10\p@}}%
   %                    \addtocontents{lot}{\protect\addvspace{10\p@}}%
-                      \if@twocolumn
-                        \@topnewpage[\@makechapterhead{##2}]%
-                      \else
-                        \@makechapterhead{##2}%
-                        \@afterheading
-                      \fi}%
+					  \if@twocolumn
+						\@topnewpage[\@makechapterhead{##2}]%
+					  \else
+						\@makechapterhead{##2}%
+						\@afterheading
+					  \fi}%
   \gdef\@makechapterhead##1{%
-    {\parindent\z@
-      \centering
-      \normalfont
-      \interlinepenalty\@M
-      \large\bfseries\@chapupp\nobreakspace\thechapter\nobreakspace--\nobreakspace ##1\par\nointerlineskip\nobreak
-      \normalfont\normalsize
-      \vskip 6ex
-    }}%
+	{\parindent\z@
+	  \centering
+	  \normalfont
+	  \interlinepenalty\@M
+	  \large\bfseries\@chapupp\nobreakspace\thechapter\nobreakspace--\nobreakspace ##1\par\nointerlineskip\nobreak
+	  \normalfont\normalsize
+	  \vskip 6ex
+	}}%
 }
 
 \AtEndOfClass{%
@@ -1188,7 +1198,7 @@ e-mail <rfbpiccoli at gmail dot com>^^J
    %\setlength{\hoffset}{-1in}
    %\setlength{\voffset}{-1in}
    % A opção [a4paper] já toma conta destes valores...
-   %\setlength{\paperheight}{297mm}
+   % \setlength{\paperheight}{297mm}
    %\setlength{\paperwidth}{210mm}
    % Margens de 2cm na horizontal e na vertical
    \setlength{\evensidemargin}{2cm}
@@ -1267,18 +1277,18 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 }
 
 \AtBeginDocument{%
-    \expandafter\selectlanguage\expandafter{\PP@language}
-    \maketitle
-    % Com a opção oneside, o ambiente titlepage reinicia o contador
-    % de páginas para 1 após gerar a página de título, então
-    % precisamos corrigir para 2.
-    \if@twoside\else\setcounter{page}\tw@\fi
-    \onehalfspacing
-    \ifx\PP@tipo\tese\fillers\else
-    \ifx\PP@tipo\dissertacao\fillers\fi\fi
-    \global\let\PP@tipo\@empty
-    \global\let\PP@fichaname\@empty
-    \global\let\PP@termoname\@empty
+	\expandafter\selectlanguage\expandafter{\PP@language}
+	\maketitle
+	% Com a opção oneside, o ambiente titlepage reinicia o contador
+	% de páginas para 1 após gerar a página de título, então
+	% precisamos corrigir para 2.
+	\if@twoside\else\setcounter{page}\tw@\fi
+	\onehalfspacing
+	\ifx\PP@tipo\tese\fillers\else
+	\ifx\PP@tipo\dissertacao\fillers\fi\fi
+	\global\let\PP@tipo\@empty
+	\global\let\PP@fichaname\@empty
+	\global\let\PP@termoname\@empty
 }
 %% End of file 'pucrs-ppgcc.cls'
 % vim:foldmethod=indent:textwidth=10000

@@ -54,4 +54,5 @@ cleanall: clean
 
 
 show: $(MAINTEX).pdf
-	@ gnome-open $(MAINTEX).pdf
+	# @ gnome-open $(MAINTEX).pdf
+	@ evince $(MAINTEX).pdf
