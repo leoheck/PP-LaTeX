@@ -75,7 +75,7 @@
 % http://www.latex-project.org/lppl.txt).  Tais mudanças estão
 % devidamente documentadas e justificadas neste arquivo.
 %----------------------------------------------------------------------------------
-\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+% \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{pucrs-ppgcc}[2012/04/26 ^^J
 ------------------------------------------------------------^^J
 Classe para monografias, teses e dissertações -- PPGCC/PUCRS^^J
@@ -113,12 +113,12 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 \RequirePackage{textcomp}[2005/09/27]
 \RequirePackage{helvet}[2005/04/12]
 \RequirePackage[helvet]{sfmath}[2007/08/27]
-%\RequirePackage{lmodern}[2009/10/30]
+\RequirePackage{lmodern}[2009/10/30]
 %\RequirePackage[lm]{sfmath}[2007/08/27]
 \RequirePackage{indentfirst}[1995/11/23]
 \RequirePackage{setspace}[2000/12/01]
 \RequirePackage{textcase}[2004/10/07]
-%\RequirePackage{graphicx}[1999/02/16]
+\RequirePackage{graphicx}[1999/02/16]
 \RequirePackage{float}[2001/11/08]
 \RequirePackage{amsmath}[2000/07/18]
 \RequirePackage{amssymb}[2009/06/22]
@@ -132,6 +132,7 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 %\RequirePackage{algorithmic}[2009/08/24]
 %\RequirePackage{subfigure}[2002/03/15]
 %\RequirePackage{multirow}
+
 
 %----------------------------------------------------------------------------------
 % Para usuários do LyX.
@@ -862,7 +863,7 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 		\@mkboth{%
 		   \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
 	\@starttoc{toc}%
-		  \addcontentsline{toc}{chapter}{\contentsname}
+		  % \addcontentsline{toc}{chapter}{\contentsname}
 	% Desnecessário
 	\if@restonecol\twocolumn\fi
 	% Aqui
@@ -888,8 +889,7 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % Capítulos com numeração ficam alinhados à esquerda com número e
 % a mesma indentação do parágrafo (após o número).
 \def\@chapter[#1]#2{
-	\ifnum 
-		\c@secnumdepth >\m@ne
+	\ifnum \c@secnumdepth >\m@ne
 		\refstepcounter{chapter}%
 		\typeout{\thechapter.}%
 		% \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}{\arabic{chapter}. \texorpdfstring{\MakeUppercase{#1}}{#1} }}
@@ -985,6 +985,7 @@ e-mail <rfbpiccoli at gmail dot com>^^J
 % Redefinindo comando interno do LaTeX para inserir
 % nomes de capítulos e seções em maiúsculo no sumário...
 %----------------------------------------------------------------------------------
+
 \def\@sect#1#2#3#4#5#6[#7]#8{%
 
 	\ifnum #2>\c@secnumdepth
